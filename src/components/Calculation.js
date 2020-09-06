@@ -27,22 +27,7 @@ export default class Calculation extends Component {
   }
 
   render() {
-    const { calculation } = this.props
 
-    return (
-      <Flex preset="box" inner="small" nowrap>
-        <Flex className="calculation__pointer" preset="content" gutter="xsmall"
-          inner="xsmall" nogrow
-        >
-          <span onClick={this.handleClick}>—</span>
-        </Flex>
-        <Flex preset="content" gutter>
-          <div>
-            <div className="calculation__output">{calculation.output}</div>
-            <div className="calculation__input">= {calculation.input}</div>
-          </div>
-        </Flex>
-      </Flex>
-    )
+    
   }
 }
