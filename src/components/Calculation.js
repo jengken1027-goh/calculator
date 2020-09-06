@@ -27,7 +27,7 @@ export default class Calculation extends Component {
   }
 
   render() {
-const { calculation } = this.props
+    const { calculation } = this.props
 
     return (
       <Flex preset="box" inner="small" nowrap>
@@ -44,6 +44,5 @@ const { calculation } = this.props
         </Flex>
       </Flex>
     )
-    
   }
 }
