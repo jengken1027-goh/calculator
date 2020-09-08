@@ -1,10 +1,7 @@
-env:
-  global:
-    - CC_TEST_REPORTER_ID=bb5acc458692373f5b6fcc54ca628817b725503d3dcd16934d68ffc84b80f085
 sudo: false
 language: node_js
 node_js:
-  - "7.0"
+  - "5.0"
 
 cache:
   directories:
@@ -13,9 +10,7 @@ cache:
 install:
   - npm install
 
-
 script:
   - npm run lint
   - npm run test
-  - npm run test:dev
   - gulp deploy
